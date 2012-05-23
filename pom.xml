@@ -4,7 +4,7 @@
   <groupId>eu.henkelmann</groupId>
   <artifactId>swing-neo2-test</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>swing-neo2-test</name>
   <url>http://maven.apache.org</url>
   <build>
@@ -25,4 +25,11 @@
   </build>
   <dependencies>    
   </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>development-repository</id>
+      <name>Development Repository</name>
+      <url>file:///home/chris/srv/maven</url>
+    </repository>
+  </distributionManagement>
 </project>
