@@ -22,14 +22,23 @@
         </configuration>
       </plugin>
     </plugins>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh-external</artifactId>
+        <version>2.2</version>
+      </extension>
+    </extensions>
   </build>
   <dependencies>    
   </dependencies>
   <distributionManagement>
     <repository>
-      <id>development-repository</id>
-      <name>Development Repository</name>
-      <url>file:///home/chris/srv/maven</url>
+      <uniqueVersion>false</uniqueVersion>
+      <id>maven.henkelmann.eu</id>
+      <name>maven.henkelmann.eu</name>
+      <url>scpexe://henkelmann.eu/srv/maven</url>
+      <layout>default</layout>
     </repository>
   </distributionManagement>
 </project>
